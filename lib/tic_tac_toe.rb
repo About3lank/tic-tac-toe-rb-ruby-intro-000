@@ -19,8 +19,7 @@ def display_board(board)
 end
 
 def input_to_index(input)
-  n = gets "Please enter a number from 1-9"
-  i = n - 1
+  index = input - 1
 end
 
 puts input_to_index(5)
