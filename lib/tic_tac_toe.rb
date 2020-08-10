@@ -47,7 +47,7 @@ def turn(board)
   # encapsulate the logic of a single complete turn
   player = current_player(board)
   puts "#{player}'s turn. Please enter a number from 1-9."
-  i = gets.to_i
+  i = gets.chomp.to_i
   i = input_to_index(i)
   while !valid_move?(board, i)
     puts "Try again. Please enter a number from 1-9"
