@@ -22,4 +22,29 @@ def input_to_index(input)
   index = input - 1
 end
 
+def move(board, index, token)
+  #
+end
+
+def position_taken?(board, index)
+  #
+end
+
+def valid_move?(board, index)
+  #
+end
+
+def turn(board)
+  #
+end
+
+def turn_count(board)
+  #
+end
+
+def current_player(board)
+  # use the #turn_count method to determine if it is "X"'s turn or "O"'s
+end
+
+
 puts input_to_index(5)
