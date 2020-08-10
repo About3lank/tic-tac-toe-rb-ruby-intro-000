@@ -26,9 +26,11 @@ end
 def move(board, index, token)
   # index in the board array that the player would like to fill out with an "X" or an "O"
   # the player's character (either "X" or "O")
+
 end
 
 def position_taken?(board, index)
+  board[index] != " " && !board[index].nil?
   # method will check to see if that board index is vacant or if it contains an "X" or an "O"
   # If the position is free, the method should return false (i.e. "not taken")
 end
