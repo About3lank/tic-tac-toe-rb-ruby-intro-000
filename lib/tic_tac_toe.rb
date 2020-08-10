@@ -48,6 +48,15 @@ end
 def turn(board)
   player = current_player(board)
   puts "#{{player}'s turn. Please enter a number from 1-9'}"
+  i = gets.to_i
+  i = input_to_index(i)
+  while !valid_move?(board, i)
+    puts "Try again. Please enter a number from 1-9"
+    i = gets.to_i
+  end
+
+
+  while !valid_move?(board, index)
 
   # encapsulate the logic of a single complete turn
 end
