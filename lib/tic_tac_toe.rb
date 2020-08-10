@@ -54,10 +54,6 @@ def turn(board)
     puts "Try again. Please enter a number from 1-9"
     i = gets.to_i
   end
-
-
-  while !valid_move?(board, index)
-
   # encapsulate the logic of a single complete turn
 end
 
