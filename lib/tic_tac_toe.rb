@@ -122,7 +122,8 @@ def play(board)
     turn(board)
   end
   if won?(board)
-    puts "Congratulations! #{winner(board)} wins!"
+    w = inner(board)
+    puts "Congratulations! #{w} wins!"
   elsif draw?(board)
     puts "It's a draw!"
   end
