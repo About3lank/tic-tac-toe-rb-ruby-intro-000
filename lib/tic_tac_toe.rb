@@ -20,7 +20,8 @@ end
 
 def input_to_index(input)
   # take input and subtract 1
-  index = input - 1
+  n = input.chomp
+  index = n - 1
 end
 
 def move(board, index, token)
