@@ -27,19 +27,20 @@ def move(board, index, token)
 end
 
 def position_taken?(board, index)
-  #
+  # method will check to see if that board index is vacant or if it contains an "X" or an "O"
+  # If the position is free, the method should return false (i.e. "not taken")
 end
 
 def valid_move?(board, index)
-  #
+  # returns true if the move is valid and false or nil if not
 end
 
 def turn(board)
-  #
+  # encapsulate the logic of a single complete turn
 end
 
 def turn_count(board)
-  #
+  # returns the number of turns that have been played.
 end
 
 def current_player(board)
