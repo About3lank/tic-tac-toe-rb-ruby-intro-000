@@ -25,6 +25,7 @@ def input_to_index(input)
 end
 
 def move(board, index, token)
+
   # index in the board array that the player would like to fill out with an "X" or an "O"
   # the player's character (either "X" or "O")
 
@@ -37,6 +38,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
+  index.between?(0,8) && !position_taken?(board, index)
   # returns true if the move is valid and false or nil if not
 end
 
