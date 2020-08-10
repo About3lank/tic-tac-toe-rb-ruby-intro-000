@@ -18,10 +18,9 @@ def display_board(board)
   puts" #{board[x.shift]} | #{board[x.shift]} | #{board[x.shift]} "
 end
 
-def input_to_index()
+def input_to_index(input)
   # take input and subtract 1
-  n = gets.chomp
-  index = n - 1
+  index = input - 1
 end
 
 def move(board, index, token)
