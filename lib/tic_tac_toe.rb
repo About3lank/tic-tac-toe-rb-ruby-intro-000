@@ -19,8 +19,8 @@ def display_board(board)
 end
 
 def input_to_index(input)
+    # take input, convert to integer and subtract 1
   i = input.to_i
-  # take input and subtract 1
   index = i - 1
 end
 
