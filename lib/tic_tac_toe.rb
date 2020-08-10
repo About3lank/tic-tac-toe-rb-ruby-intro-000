@@ -117,7 +117,7 @@ def play(board)
   # must allow players to take turns
   # checking if the game is over after every turn
   # at the conclusion of the game, reporting to the user the outcome of the game
-  board = [" "] * 9
+  #board = [" "] * 9
   until over?(board)
     turn(board)
   end
