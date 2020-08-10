@@ -20,7 +20,7 @@ end
 
 def input_to_index(input)
   # take input and subtract 1
-  n = input.chomp
+  n = gets.chomp
   index = n - 1
 end
 
