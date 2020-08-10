@@ -47,3 +47,39 @@ end
 def current_player(board)
   # use the #turn_count method to determine if it is "X"'s turn or "O"'s
 end
+
+def won?(b)
+  WIN_COMBINATIONS.detect{|c| b[c[0]] != " " && b[c[0]] == b[c[1]] && b[c[0]] == b[c[2]]}
+  # should be able to iterate over the combinations defined in WIN_COMBINATIONS
+  # using each or a higher-level iterator
+  # return the correct board indexes that created the win
+end
+
+def full?(board)
+  board.none?{|p| p == " "}
+  # should accept a board and return true if every element in the board contains either an "X" or an "O".
+  # return false if there is an available position and true if there is not
+end
+
+def draw?(board)
+  full?(board) && !(won?(board))
+  # returns true if the board has not been won but is full
+  # false if the board is not won and the board is not ful
+  # false if the board is won
+  # compose this method solely using the methods you used above with some ruby logi
+end
+
+def over?(board)
+  full?(board) || draw?(board) || won?(board)
+  # returns true if the board has been won, is a draw, or is full
+  # compose this method solely using the methods you used above with some ruby logic
+end
+
+def winner(board)
+  if won?(board) == nil
+    nil
+  else
+    winning = won?(board)
+    winner = board[winning[0]]
+  end
+end
