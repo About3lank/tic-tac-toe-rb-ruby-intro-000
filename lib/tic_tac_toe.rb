@@ -25,6 +25,9 @@ def input_to_index(input)
 end
 
 def move(board, index, token)
+  m = board
+  m[index] = token
+  m
 
   # index in the board array that the player would like to fill out with an "X" or an "O"
   # the player's character (either "X" or "O")
