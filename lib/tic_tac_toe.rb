@@ -46,6 +46,7 @@ def valid_move?(board, index)
 end
 
 def turn(board)
+  # encapsulate the logic of a single complete turn
   player = current_player(board)
   puts "#{{player}'s turn. Please enter a number from 1-9'}"
   i = gets.to_i
@@ -54,7 +55,6 @@ def turn(board)
     puts "Try again. Please enter a number from 1-9"
     i = gets.to_i
   end
-  # encapsulate the logic of a single complete turn
 end
 
 def turn_count(board)
