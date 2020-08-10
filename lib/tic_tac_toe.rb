@@ -55,6 +55,7 @@ def turn(board)
     puts "Try again. Please enter a number from 1-9"
     i = gets.to_i
   end
+  move(board, i, player)
 end
 
 def turn_count(board)
