@@ -106,3 +106,7 @@ def winner(board)
     winner = board[winning[0]]
   end
 end
+
+def play()
+  #
+end
