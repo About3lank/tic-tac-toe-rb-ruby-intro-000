@@ -112,7 +112,7 @@ def winner(board)
   end
 end
 
-def play(board)
+def play()
   # the main method of the tic tac toe application and is responsible for the game loop
   # must allow players to take turns
   # checking if the game is over after every turn
