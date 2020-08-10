@@ -46,7 +46,7 @@ end
 def turn_count(board)
   x = []
   board.select do |c|
-    c != " " && !c.nil? ? x << c : g=1
+    c != " " && !c.nil? ? x << c : a=a
   end
   x.length()
   # returns the number of turns that have been played.
