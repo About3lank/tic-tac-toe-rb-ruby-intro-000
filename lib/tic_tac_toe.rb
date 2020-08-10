@@ -119,4 +119,11 @@ def play(board)
   # at the conclusion of the game, reporting to the user the outcome of the game
   board = [" "] * 9
   until over?(board)
+    turn(board)
+  end
+  if won?(board)
+    puts "Congratulations! #{winner(board)} wins!"
+  elsif draw?(board)
+    puts "It's a draw!"
+  end
 end
