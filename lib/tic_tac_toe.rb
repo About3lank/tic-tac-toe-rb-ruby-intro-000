@@ -53,6 +53,12 @@ def turn_count(board)
 end
 
 def current_player(board)
+  c = turn_count(board) % 2
+  if c == 0:
+    current_player = "X"
+  else
+    current_player = "O"
+  end
   # use the #turn_count method to determine if it is "X"'s turn or "O"'s
 end
 
